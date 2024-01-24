@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin.css">
+
+    <title>Form Pegawai</title>
+  </head>
+  <body style="background-color: #092635;">
+            <!-- Ini Isi Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <img src="Image/WorkMind_Atlas_logo-removebg-preview.png" alt="logo" width="50">
+        <a class="navbar-brand" href="Dashboard.html">WORKMIND ATLAS |<b> Data Pegawai </b></a>
+        <form class="form-inline my-2 my-lg-0 ml-auto">
+          <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-info  my-2 my-sm-0" type="submit">Search</button>
+      </form>
+          <div class="icon ml-4">
+            <h5>
+                <i class="fa-solid fa-envelope mr-3" data-toggle="tooltip" title="Inbox"></i>
+                <i class="fa-solid fa-bell mr-3" data-toggle="tooltip" title="Notification"></i>
+            </h5>
+          </div>
+          
+        </div>
+      </nav>
+        <!-- Ini Sidebar -->
+        <div class="row no-gutters mt-5">
+          <div class="col-md-2 bg-transparent mt-2 pr-3 pt-4">
+              <ul class="nav flex-column ml-3 mb-5">
+                  <li class="nav-item" style="color: antiquewhite;">
+                    <a class="nav-link active text-white" href="Dashboard.html"><i class="fa-solid fa-bars-progress"></i> Dashboard</a><hr class="bg-secondary">
+                  </li>
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-user-tie"></i> Data Pegawai
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar pegawai.html">Daftar Pegawai</a>
+                      <a class="dropdown-item" href="Form pegawai.html">Form Pegawai</a>
+                    </div>
+                  </div>  
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-table-columns"></i> Data Lembur
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar Lembur.html">Daftar Lembur</a>
+                      <a class="dropdown-item" href="Form lembur.html">Form Lembur</a>
+                    </div>
+                  </div> 
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="kehadiran.html"><i class="fa-solid fa-clipboard-user"></i> Kehadiran</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="Profil.html"><i class="fa-solid fa-circle-info"></i> About</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="D:\xampp\htdocs\Praktikum-Web\Project 2\login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a><hr class="bg-secondary">
+                  </li>
+                </ul>
+        </div>
+        <!-- Ini Isi Contentnya -->
+        <div class="col-md-10 p-5 pt-2">
+          <div class="sub-heading">
+            <h3 class="text-white"><i class="fa-solid fa-user-tie"></i> Form Pegawai</h3><hr>
+          </div>
+            <form>
+                <div class="form-group text-white">
+                  <label for="nama">Nama Pegawai:</label>
+                  <input type="text" class="form-control" id="nama" placeholder="Masukan Nama Pegawai">
+                </div>
+
+                <div class="form-group text-white">
+                  <label for="born">Tempat, Tanggal lahir Pegawai:</label>
+                  <input type="text" class="form-control" id="born" placeholder="Masukan Tempat, Tanggal Lahir Pegawai">
+                </div>
+
+                <div class="form-group text-white">
+                    <label for="jenis">Jenis Kelamin Pegawai:</label>
+                    
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="laki-laki" name="jenisKelamin" class="custom-control-input">
+                      <label class="custom-control-label" for="laki-laki">Laki-Laki</label>
+                    </div>
+                    
+                    <div class="custom-control custom-radio">
+                      <input type="radio" id="perempuan" name="jenisKelamin" class="custom-control-input">
+                      <label class="custom-control-label" for="perempuan">Perempuan</label>
+                    </div>
+                </div>
+                  
+                <div class="form-group text-white">
+                  <label for="nik">NIK Pegawai:</label>
+                  <input type="number" class="form-control" id="nik" placeholder="Masukan NIK Pegawai">
+                </div>
+
+                <div class="form-group text-white">
+                    <label for="alamat">Alamat Pegawai:</label>
+                    <textarea class="form-control" id="alamat" placeholder="Masukkan Alamat Pegawai"></textarea>
+                </div>
+                
+                <div class="form-group text-white">
+                    <label for="notelp">No Telp Pegawai:</label>
+                    <input type="number" class="form-control" id="notelp" placeholder="Masukan Nomor Telepon Pegawai">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+          </div>
+          
+  </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bc190cf489.js" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+  </body>
+  <br><br><br><br><br><br><br><br><br><br>
+<div class="card-footer mt-0 mr-0 bg-dark text-white text-left w-100">
+  <h5 class="card-header"><a>Navigating HR Excellence for Future Success!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image/White WMA Logo lift.png" width="70"></h5>
+  <div class="card-body-footer col-md-12 mt-2">
+    <p class="card-text"> ©2023 WorkMind Atlas. All rights reserved.</p>
+  </div>
+</div>  
+</html>

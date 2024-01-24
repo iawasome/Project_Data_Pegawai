@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin.css">
+
+    <style>
+       .sub-heading {
+        border: 1px solid #fff; 
+        border-radius: 10px; 
+        padding: 10px; 
+        background-color: transparent; 
+        display: flex; 
+        align-items: center; 
+        margin-bottom: 20px; 
+        margin-right: 1px;
+       }
+    </style>
+
+    <title>Data Pegawai</title>
+  </head>
+  <body style="background-color: #092635">
+            <!-- Ini Isi Header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+              <img src="Image/WorkMind_Atlas_logo-removebg-preview.png" alt="logo" width="50">
+                <a class="navbar-brand" href="Dashboard.html">WORKMIND ATLAS |<b> Data Pegawai </b></a>
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                  <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info  my-2 my-sm-0" type="submit">Search</button>
+              </form>
+                  <div class="icon ml-4">
+                    <h5>
+                        <i class="fa-solid fa-envelope mr-3" data-toggle="tooltip" title="Inbox"></i>
+                        <i class="fa-solid fa-bell mr-3" data-toggle="tooltip" title="Notification"></i>
+                    </h5>
+                  </div>
+                  
+                </div>
+              </nav>
+        <!-- Ini Sidebar -->
+        <div class="row no-gutters mt-5">
+          <div class="col-md-2 bg-transparent mt-2 pr-3 pt-4">
+              <ul class="nav flex-column ml-3 mb-5">
+                  <li class="nav-item" style="color: antiquewhite;">
+                    <a class="nav-link active text-white" href="Dashboard.html"><i class="fa-solid fa-bars-progress"></i> Dashboard</a><hr class="bg-secondary">
+                  </li>
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-user-tie"></i> Data Pegawai
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar pegawai.html">Daftar Pegawai</a>
+                      <a class="dropdown-item" href="Form pegawai.html">Form Pegawai</a>
+                    </div>
+                  </div>  
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-table-columns"></i> Data Lembur
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar Lembur.html">Daftar Lembur</a>
+                      <a class="dropdown-item" href="Form lembur.html">Form Lembur</a>
+                    </div>
+                  </div> 
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="kehadiran.html"><i class="fa-solid fa-clipboard-user"></i> Kehadiran</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="Profil.html"><i class="fa-solid fa-circle-info"></i> About</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="D:\xampp\htdocs\Praktikum-Web\Project 2\login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a><hr class="bg-secondary">
+                  </li>
+                </ul>
+        </div>
+        <!-- Ini Isi Contentnya -->
+        <div class="col-md-10 p-5 pt-0">
+            <div class="sub-heading">
+              <h3><i class="fa-solid fa-clipboard-user"></i> Kehadiran Pegawai</h3><hr>
+            </div>
+              <table class="table table-bordered">
+                  <thead class="thead-light">
+                      <tr>
+                          <th rowspan="2" class="align-middle" >No</th>
+                          <th rowspan="2" class="align-middle">Employee Name</th>
+                          <th colspan="2">Jan</th>
+                          <th colspan="3">Feb-Apr</th>
+                          <th colspan="3">May-Jul</th>
+                          <th colspan="4">Aug-Dec</th>
+                      </tr>
+                      <tr>
+                          <th>P</th>
+                          <th>A</th>
+                          <th>P</th>
+                          <th>A</th>
+                          <th>P</th>
+                          <th>A</th>
+                          <th>P</th>
+                          <th>A</th>
+                          <th>P</th>
+                          <th>A</th>
+                          <th>P</th>
+                          <th>A</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr style="color: white;">
+                          <td>1</td>
+                          <td>Fajar Muhamad</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                      </tr>
+                      <tr style="color: white;">
+                          <td>2</td>
+                          <td>Muhammad Andhika Thata</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>26</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                      </tr>
+                      <tr style="color: white;">
+                          <td>3</td>
+                          <td>Royhan Audy Akbar</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>26</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                      </tr>
+                      <tr style="color: white;">
+                          <td>4</td>
+                          <td>Fatiyah Labibah</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>26</td>
+                          <td>25</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                          <td>26</td>
+                          <td>0</td>
+                      </tr>
+                      <tr style="color: white;">
+                        <td colspan="2" class="text-end">Total</td>
+                        <td>26</td>
+                        <td>78</td>
+                        <td>104</td>
+                        <td>75</td>
+                        <td>104</td>
+                        <td>0</td>
+                        <td>104</td>
+                        <td>0</td>
+                        <td>104</td>
+                        <td>0</td>
+                        <td>104</td>
+                        <td>0</td>
+                    </tr>
+
+                    <div>
+                        <table class="table table-bordered">
+                            <thead class="thead-light">
+                              <tr style="color: white;">
+                                <th class="border-0" scope="col">Note:</th>
+                                <th class="border-0" scope="col"></th>
+                                <th class="border-0" scope="col"></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr style="color: white;">
+                                <th scope="row">1</th>
+                                <td>P</td>
+                                <td>Present</td>
+                              </tr>
+                              <tr style="color: white;">
+                                <th scope="row">2</th>
+                                <td>A</td>
+                                <td>Absent</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                    </div>
+                    
+                     
+                      <!-- Add more rows for additional employees -->
+                  </tbody>
+              </table>
+            </div>
+  </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bc190cf489.js" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+  </body>
+  <br><br><br><br><br><br><br><br><br><br>
+<div class="card-footer mt-0 mr-0 bg-dark text-white text-left w-100">
+  <h5 class="card-header"><a>Navigating HR Excellence for Future Success!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image/White WMA Logo lift.png" width="70"></h5>
+  <div class="card-body-footer col-md-12 mt-2">
+    <p class="card-text"> ©2023 WorkMind Atlas. All rights reserved.</p>
+  </div>
+</div>   
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="admin.css">
+
+    <title>Data Pegawai</title>
+  </head>
+  <body style="background-color: #092635">
+            <!-- Ini Isi Header -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+              <img src="Image/WorkMind_Atlas_logo-removebg-preview.png" alt="logo" width="50">
+                <a class="navbar-brand" href="Dashboard.html">WORKMIND ATLAS |<b> Data Pegawai </b></a>
+                <form class="form-inline my-2 my-lg-0 ml-auto">
+                  <input class="form-control mr-sm-2 bg-dark" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-info  my-2 my-sm-0" type="submit">Search</button>
+              </form>
+                  <div class="icon ml-4">
+                    <h5>
+                        <i class="fa-solid fa-envelope mr-3" data-toggle="tooltip" title="Inbox"></i>
+                        <i class="fa-solid fa-bell mr-3" data-toggle="tooltip" title="Notification"></i>
+                    </h5>
+                  </div>
+                  
+                </div>
+              </nav>
+        <!-- Ini Sidebar -->
+        <div class="row no-gutters mt-5">
+          <div class="col-md-2 bg-transparent mt-2 pr-3 pt-4">
+              <ul class="nav flex-column ml-3 mb-5">
+                  <li class="nav-item" style="color: antiquewhite;">
+                    <a class="nav-link active text-white" href="Dashboard.html"><i class="fa-solid fa-bars-progress"></i> Dashboard</a><hr class="bg-secondary">
+                  </li>
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-user-tie"></i> Data Pegawai
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar pegawai.html">Daftar Pegawai</a>
+                      <a class="dropdown-item" href="Form pegawai.html">Form Pegawai</a>
+                    </div>
+                  </div>  
+                  <div class="dropdown show">
+                    <a class="btn btn-transparent dropdown-toggle text-white" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fa-solid fa-table-columns"></i> Data Lembur
+                    </a><hr class="bg-secondary">
+                  
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="Daftar Lembur.html">Daftar Lembur</a>
+                      <a class="dropdown-item" href="Form lembur.html">Form Lembur</a>
+                    </div>
+                  </div> 
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="kehadiran.html"><i class="fa-solid fa-clipboard-user"></i> Kehadiran</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="Profil.html"><i class="fa-solid fa-circle-info"></i> About</a><hr class="bg-secondary">
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="D:\xampp\htdocs\Praktikum-Web\Project 2\login.html"><i class="fa-solid fa-right-from-bracket"></i> Log Out</a><hr class="bg-secondary">
+                  </li>
+                </ul>
+        </div>
+        <!-- Ini Isi Contentnya -->
+        <div class="col-md-10 p-5 pt-2">
+          <div class="sub-heading">
+            <h3><i class="fa-solid fa-user-clock"></i> Daftar Lembur</h3><hr>
+          </div>
+          <h3>Bulan-Tahun:</h3>
+          <div class="input-group">
+              <select class="custom-select" id="bulan">
+                  <option selected>Pilih Bulan</option>
+                  <!-- Add options for each month -->
+                  <option value="1">Januari</option>
+                  <option value="2">Februari</option>
+                  <option value="3">Maret</option>
+                  <option value="4">April</option>
+                  <option value="5">Mei</option>
+                  <option value="6">Juni</option>
+                  <option value="7">Juli</option>
+                  <option value="8">Agustus</option>
+                  <option value="9">September</option>
+                  <option value="10">Oktober</option>
+                  <option value="11">November</option>
+                  <option value="12">Desember</option>
+              </select>
+              <select class="custom-select" id="tahun">
+                  <option selected>Pilih Tahun</option>
+                  <!-- Add static options for years -->
+                  <option value="2022">2022</option>
+                  <option value="2023">2023</option>
+                  <option value="2024">2024</option>
+                  <option value="2025">2025</option>
+                  <!-- Add more years as needed -->
+              </select>
+          </div>
+          <table class="table table-bordered">
+              <thead>
+                  <tr style="color: white;">
+                      <th scope="col">No.</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Jabatan</th>
+                      <th scope="col">Tanggal</th>
+                      <th scope="col">Jam Mulai</th>
+                      <th scope="col">Jam Akhir</th>
+                      <th scope="col">Status</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr style="color: white;">
+                      <th scope="row">1</th>
+                      <td>Budi Dharmawan</td>
+                      <td>Direktur</td>
+                      <td>10-11-2023</td>
+                      <td>17:00</td>
+                      <td>20:00</td>
+                      <td><input type="checkbox" name="" id=""></td>
+                  </tr>
+                  <tr style="color: white;">
+                      <th scope="row">2</th>
+                      <td>Annisa Amalia</td>
+                      <td>Manajer</td>
+                      <td>10-11-2023</td>
+                      <td>17:00</td>
+                      <td>20:00</td>
+                      <td><input type="checkbox" name="" id=""></td>
+                  </tr>
+                  <tr style="color: white;">
+                      <th scope="row">3</th>
+                      <td>Eddy Pardiman</td>
+                      <td>Staff</td>
+                      <td>26-11-2023</td>
+                      <td>17:00</td>
+                      <td>22:00</td>
+                      <td><input type="checkbox" name="" id=""></td>
+                  </tr>
+              </tbody>
+          </table>
+      </main>
+  </div>
+  
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/bc190cf489.js" crossorigin="anonymous"></script>
+    <script src="admin.js"></script>
+  </body>
+
+  <br><br><br><br><br><br><br><br><br><br>
+<div class="card-footer mt-0 mr-0 bg-dark text-white text-left w-100">
+  <h5 class="card-header"><a>Navigating HR Excellence for Future Success!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="Image/White WMA Logo lift.png" width="70"></h5>
+  <div class="card-body-footer col-md-12 mt-2">
+    <p class="card-text"> ©2023 WorkMind Atlas. All rights reserved.</p>
+  </div>
+</div>  
+</html>
